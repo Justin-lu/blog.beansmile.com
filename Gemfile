@@ -23,6 +23,9 @@ end
 
 gem 'jquery-rails'
 
+# user avatar
+gem 'paperclip'
+
 gem 'haml', '~> 3.1.4'
 gem "haml-rails"
 gem 'simple_form', '~> 2.0.2'
