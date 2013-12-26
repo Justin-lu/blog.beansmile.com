@@ -23,6 +23,16 @@ end
 
 gem 'jquery-rails'
 
+gem 'haml', '~> 3.1.4'
+gem "haml-rails"
+gem 'simple_form', '~> 2.0.2'
+gem 'country_select', '~> 0.0.2'
+
+# Bootstrap-sass
+gem 'bootstrap-sass', '2.3.2.0'
+gem 'bootstrap-will_paginate', '0.0.9'
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
