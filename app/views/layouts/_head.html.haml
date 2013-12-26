@@ -17,9 +17,9 @@
       .btn-group.pull-right
         %a.btn.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
           %i.icon-user
-          -##{current_user.user_name || current_user.email}
-          admin
+          #{current_user.user_name || current_user.email}
           %span.caret
         %ul.dropdown-menu
           %li
             = link_to('Logout', destroy_user_session_path, :method=>'delete')
+

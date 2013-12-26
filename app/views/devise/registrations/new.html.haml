@@ -1,0 +1,16 @@
+#login
+  .container
+    .row
+      .main
+        %h3 
+          Please Sign In, or 
+          = link_to "Sign up", new_registration_path(resource_name)
+        = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+          = f.input :user_name
+          = f.input :email
+          = f.input :password, input_html: {autocomplete: :off}
+          = f.input :password_confirmation, input_html: {autocomplete: :off}
+          = f.input :avatar, :as => :file, :label => "Upload Photo"
+          = f.label "Upload Profile Photo", id: "upload_profile_photo", class: "upload_profile_photo"
+          %img{id: "avatar_preview", src: "#", alt: "your avatar"}
+          = f.button :submit, 'Signup'
